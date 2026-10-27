@@ -1,0 +1,49 @@
+/* ==========================================================================
+   ELEVATION — radii, borders, shadows, motion
+   The brand reads as embroidered patches and stamped insignia: low radii,
+   firm edges, decisive shadows. Avoid soft pillowy blurs.
+   ========================================================================== */
+:root {
+  /* ---- Corner radii (restrained — stamped, not pill-soft) -------------- */
+  --radius-none: 0;
+  --radius-xs:  2px;
+  --radius-sm:  4px;
+  --radius-md:  6px;
+  --radius-lg:  10px;
+  --radius-xl:  16px;
+  --radius-pill: 999px;   /* tags / status capsules only */
+  --radius-badge: 50%;    /* the patch seal */
+
+  /* ---- Border widths --------------------------------------------------- */
+  --border-thin:   1px;
+  --border-base:   1.5px;
+  --border-thick:  2px;
+  --border-stamp:  3px;   /* stamped-frame look */
+
+  /* ---- Shadows (cool cobalt-tinted, decisive) -------------------------- */
+  --shadow-xs: 0 1px 2px rgba(0,32,63,0.10);
+  --shadow-sm: 0 2px 5px rgba(0,32,63,0.12);
+  --shadow-md: 0 6px 16px rgba(0,32,63,0.14);
+  --shadow-lg: 0 14px 34px rgba(0,32,63,0.18);
+  --shadow-xl: 0 26px 60px rgba(0,20,40,0.30);
+  --shadow-seal: 0 8px 22px rgba(0,20,40,0.35);   /* lifts the patch badge */
+  --shadow-stamp-accent: 0 3px 0 0 var(--brick-600); /* hard red under-edge */
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.5);
+
+  /* ---- Focus ----------------------------------------------------------- */
+  --ring: 0 0 0 3px rgba(29,114,186,0.45);
+
+  /* ---- Motion (sharp, confident — slight overshoot, no soft drift) ----- */
+  --ease-stamp: cubic-bezier(0.2, 1.4, 0.3, 1);     /* @kind other */ /* impact / overshoot */
+  --ease-out:   cubic-bezier(0.2, 0.7, 0.2, 1);     /* @kind other */
+  --ease-in-out:cubic-bezier(0.6, 0, 0.2, 1);       /* @kind other */
+  --dur-fast:   120ms;   /* @kind other */
+  --dur-base:   200ms;   /* @kind other */
+  --dur-slow:   360ms;   /* @kind other */
+
+  /* ---- Z-index --------------------------------------------------------- */
+  --z-base: 1;        /* @kind other */
+  --z-sticky: 100;    /* @kind other */
+  --z-overlay: 1000;  /* @kind other */
+  --z-toast: 1200;    /* @kind other */
+}

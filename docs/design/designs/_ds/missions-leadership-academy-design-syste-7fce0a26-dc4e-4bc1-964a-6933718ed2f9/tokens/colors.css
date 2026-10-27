@@ -1,0 +1,94 @@
+/* ==========================================================================
+   COLORS — Missions & Leadership Academy
+   Palette sampled directly from the embroidered Issachar patch badge:
+   cobalt blue field, brick-red / maroon horseman, cream ring, ink-black text.
+   ========================================================================== */
+:root {
+  /* ---- Cobalt (primary / authority) ------------------------------------ */
+  --cobalt-950: #001428;
+  --cobalt-900: #00203f;
+  --cobalt-800: #003070;
+  --cobalt-700: #0c4c8a;
+  --cobalt-600: #1460a1;   /* PRIMARY — the badge field */
+  --cobalt-500: #1d72ba;
+  --cobalt-400: #4f93cf;
+  --cobalt-300: #8db9dd;
+  --cobalt-200: #bcd6ec;
+  --cobalt-100: #dceaf5;
+  --cobalt-50:  #eef5fb;
+
+  /* ---- Brick / Maroon (accent / urgency) ------------------------------- */
+  --brick-900: #4a0000;
+  --brick-800: #6f0000;    /* deep maroon — the horseman shadow */
+  --brick-700: #8c1f1c;
+  --brick-600: #a82e26;    /* ACCENT — the horseman red */
+  --brick-500: #c0392f;
+  --brick-400: #d4574b;
+  --brick-300: #e3897f;
+  --brick-200: #f0bdb6;
+  --brick-100: #f8e0dc;
+
+  /* ---- Cream / Parchment (light surfaces) ------------------------------ */
+  --cream-50:  #faf6ec;
+  --cream-100: #f4eddc;
+  --cream-200: #e9ddc4;
+  --cream-300: #dccfae;
+
+  /* ---- Ink (cool near-black neutrals) ---------------------------------- */
+  --ink-950: #07080a;
+  --ink-900: #0c0d10;      /* badge text black */
+  --ink-800: #16181d;
+  --ink-700: #22262e;
+  --ink-600: #353b45;
+  --ink-500: #4d5460;
+  --ink-400: #6b7280;
+  --ink-300: #9aa1ad;
+  --ink-200: #c9ced6;
+  --ink-100: #e4e7ec;
+  --ink-50:  #f4f5f7;
+
+  --white: #ffffff;
+
+  /* ---- Functional / status --------------------------------------------- */
+  --success-600: #2f7d4f;
+  --success-100: #dcefe2;
+  --warning-600: #b8791b;
+  --warning-100: #faeccf;
+  --danger-600:  var(--brick-600);
+  --danger-100:  var(--brick-100);
+
+  /* ======================================================================
+     SEMANTIC ALIASES — reference these in components, not raw scale values
+     ====================================================================== */
+  --color-primary:        var(--cobalt-600);
+  --color-primary-strong: var(--cobalt-800);
+  --color-primary-deep:   var(--cobalt-900);
+  --color-primary-soft:   var(--cobalt-100);
+  --color-accent:         var(--brick-600);
+  --color-accent-strong:  var(--brick-800);
+  --color-accent-soft:    var(--brick-100);
+
+  /* Surfaces ------------------------------------------------------------- */
+  --bg-canvas:    var(--cream-50);    /* default light page */
+  --bg-deep:      var(--cobalt-900);  /* hero / dark sections */
+  --bg-night:     var(--ink-950);     /* cold-open / cinematic */
+  --surface-card: var(--white);
+  --surface-sunk: var(--cream-100);
+  --surface-dark-card: var(--cobalt-800);
+
+  /* Text ----------------------------------------------------------------- */
+  --text-strong:   var(--ink-900);
+  --text-body:     var(--ink-700);
+  --text-muted:    var(--ink-400);
+  --text-on-dark:  var(--cream-50);
+  --text-on-dark-muted: var(--cobalt-200);
+  --text-accent:   var(--brick-600);
+  --text-link:     var(--cobalt-700);
+
+  /* Lines / borders ------------------------------------------------------ */
+  --border:        var(--ink-100);
+  --border-strong: var(--ink-200);
+  --border-on-dark: rgba(255,255,255,0.16);
+  --rule-accent:   var(--brick-600);   /* the signature red divider */
+  --focus-ring:    var(--cobalt-500);
+}

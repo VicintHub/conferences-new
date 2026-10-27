@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Missions & Leadership Academy — Design System
+   Global stylesheet entry point. Consumers link THIS file only.
+   Keep this file as @import lines + minimal base resets.
+   ========================================================================== */
+@import url('tokens/fonts.css');
+@import url('tokens/colors.css');
+@import url('tokens/typography.css');
+@import url('tokens/spacing.css');
+@import url('tokens/elevation.css');
+
+/* ---- Minimal base layer (safe, opt-in via .mla-prose / utility classes) - */
+.mla-display {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  color: var(--text-strong);
+}
+.mla-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-accent);
+}
+.mla-body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-body);
+}
